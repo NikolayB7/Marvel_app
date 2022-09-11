@@ -2,6 +2,7 @@ import {Component} from "react";
 import MarvelService from "../../servises/MarvelService";
 import './charInfo.scss';
 import Spinner from "../spinner/Spinner";
+import PropTypes from 'prop-types'
 
 class CharInfo extends Component{
 
@@ -74,5 +75,8 @@ const View =({char})=>{
     )
 }
 
+CharInfo.propTypes ={
+    charId: PropTypes.number
+}
 
 export default CharInfo;
